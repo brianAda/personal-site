@@ -1,9 +1,13 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
 body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
   -ms-user-select: none;
-  color: rgb(28, 28, 30);
+  color: #02203C;
   background-color: #f6f9fc;
 }
 
@@ -45,7 +49,7 @@ a:hover {
 }
 
 @media (max-width: 500px) {
-  #main-container {
+  main {
     top: 0%;
     width: 100%;
     padding: 30px;
@@ -81,10 +85,7 @@ a:hover {
   width: 30px;
 }
 
-#description {
-  margin: 20px 0 0 0;
-}
-
+/* Todo:  split into a dedicated particles css file */
 #particles-js {
   position: absolute;
   width: 100%;

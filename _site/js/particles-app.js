@@ -1,7 +1,12 @@
-particlesJS("particles-js", {
+const speed = document.querySelector("#speed");
+const density = document.querySelector("#density");
+const size = document.querySelector("#size");
+const lineWidth = document.querySelector("#line-width");
+
+const particleObj = {
   particles: {
     number: {
-      value: 60,
+      value: 40,
       density: {
         enable: true,
         value_area: 800
@@ -49,7 +54,7 @@ particlesJS("particles-js", {
     },
     move: {
       enable: true,
-      speed: 2,
+      speed: 3,
       direction: "none",
       random: false,
       straight: false,
@@ -79,14 +84,14 @@ particlesJS("particles-js", {
       grab: {
         distance: 400,
         line_linked: {
-          opacity: 0.9
+          opacity: 0.6
         }
       },
       bubble: {
         distance: 400,
         size: 40,
         duration: 2,
-        opacity: 8,
+        opacity: 0.1,
         speed: 3
       },
       repulse: {
@@ -102,4 +107,29 @@ particlesJS("particles-js", {
     }
   },
   retina_detect: true
+};
+
+// Initialize the particles
+particlesJS("particles-js", particleObj);
+
+speed.addEventListener('change', () => {
+  particleObj.particles.move.speed = speed.value;
+  particlesJS("particles-js", particleObj);
 });
+
+density.addEventListener('change', () => {
+  particleObj.particles.number.value = density.value;
+  particlesJS("particles-js", particleObj);
+});
+
+size.addEventListener('change', () => {
+  particleObj.particles.size.value = size.value;
+  particlesJS("particles-js", particleObj);
+});
+
+lineWidth.addEventListener('change', () => {
+  particleObj.particles.line_linked.width = lineWidth.value;
+  particlesJS("particles-js", particleObj);
+});
+
+/* line_linked.width */
