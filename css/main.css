@@ -64,6 +64,10 @@ a:hover {
   transform: scale(1.1);
 }
 
+.nobr {
+  white-space: nowrap;
+}
+
 #image {
   margin: 10px 0;
   width: 200px;
