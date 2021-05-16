@@ -2,19 +2,33 @@
   font-family: "Open Sans", sans-serif;
 }
 
+@media (max-width: 500px) {
+  main {
+    top: 0%;
+    width: 100%;
+    padding: 30px;
+  }
+}
+
 body {
   color: #02203C;
   background-color: #F8F7FF;
 }
 
-main {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 15%;
-  margin: 0 auto;
-  width: 500px;
-  text-align: center;
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 5em;
 }
 
 h1 {
@@ -33,16 +47,14 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #02203C;
-}
-
-@media (max-width: 500px) {
-  main {
-    top: 0%;
-    width: 100%;
-    padding: 30px;
-  }
+.about {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 15%;
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
 }
 
 .icon {
@@ -55,6 +67,10 @@ a:hover {
 
 .nobr {
   white-space: nowrap;
+}
+
+a:hover {
+  color: #02203C;
 }
 
 #image {
