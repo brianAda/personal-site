@@ -3,12 +3,8 @@
 }
 
 body {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -ms-user-select: none;
   color: #02203C;
-  background-color: #f6f9fc;
+  background-color: #F8F7FF;
 }
 
 main {
@@ -22,21 +18,14 @@ main {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   margin: 0;
 }
 
-h2 {
-  font-size: 20px;
-  font-weight: 400;
-  margin: 0;
-}
-
 p {
   font-size: 18px;
-  margin-bottom: 20px;
 }
 
 a {
